@@ -1,0 +1,23 @@
+.button {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.loadbut {
+    max-width: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.loadbut:hover {
+    background-color: #0056b3;
+}

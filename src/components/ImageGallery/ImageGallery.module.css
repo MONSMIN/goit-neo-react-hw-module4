@@ -1,0 +1,15 @@
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.galleryItem {
+	border: 1px solid #4c4848;
+	width: 300px;
+	cursor: pointer;
+	background-color: #f9f9f9;
+	color: #213547;
+}   
