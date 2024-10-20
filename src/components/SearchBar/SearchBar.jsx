@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BiSearch } from "react-icons/bi";
+import { toast } from 'react-hot-toast';
 import styles from './SearchBar.module.css';
 
 const SearchBar = ({ onSubmit }) => {
@@ -7,6 +8,12 @@ const SearchBar = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();   
+    
+    if (searchTerm.trim() === '') {
+      toast.error('Please enter a search term');
+      return;
+    }
+    
     onSubmit(searchTerm);
   };
 

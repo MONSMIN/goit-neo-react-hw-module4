@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Toaster } from "react-hot-toast";
+import toast, { Toaster } from 'react-hot-toast';
 
 import SearchBar from './SearchBar/SearchBar.jsx';
 import ImageGallery from './ImageGallery/ImageGallery.jsx';
@@ -42,7 +42,7 @@ function App() {
 
   const handleSearchSubmit = (searchQuery) => {
     if (searchQuery.trim() === '') {
-      Toaster.error('Please enter a search term');
+      toast.error('Please enter a search term');
       return;
     }
     setQuery(searchQuery);
